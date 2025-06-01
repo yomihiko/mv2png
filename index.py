@@ -6,15 +6,14 @@
 #    Oct 16, 2021 02:09:06 PM JST  platform: Windows NT
 
 import os
-import threading
 
 import tkinter as tk
-from models.fileSelectBox import Path
 from controller import Controller
-from functools import partial
 
 def vp_start_gui():
     root = tk.Tk()
+    iconfile = '.\\40262db0-51dd-464d-adf0-8126083248dd.ico'
+    root.iconbitmap(default=iconfile)
     MainPanel (root)
     root.mainloop()
 
